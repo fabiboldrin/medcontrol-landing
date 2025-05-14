@@ -1,0 +1,73 @@
+#home {
+    display: flex;
+    min-height: calc(100vh - 91px);
+    position: relative;
+}
+
+#cta {
+ width: 50%;
+ display: flex;
+ flex-direction: column;
+ gap: 28px;
+ margin-top: 5%;
+}
+
+#cta .title {
+    font-size: 2rem;
+    color:rgb(0, 0, 0)
+}
+
+#cta .title span {
+    color: indigo
+}
+
+#cta .description {
+    font-size: 1rem;
+}
+
+#banner {
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    width: 70%;
+    z-index: 2;
+}
+
+#banner img {
+    height: 70%;
+    width: fit-content;
+    position: relative;
+    margin-top: 10%;
+}
+
+.shape {
+    background-color: rgb(205, 150, 207);
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    border-radius: 40% 30% 0% 20%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/* essa parte serve para, se a pessoa diminuir a tela, tudo diminuir junto e sair a imagem do home*/
+
+@media screen and (max-width: 1170px) {
+    #home {
+        min-height: 100%;
+        padding-top: 0px;
+    }
+
+    #banner,
+    #banner img,
+    #home .shape {
+        display: none;
+    }
+
+    #cta {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+}

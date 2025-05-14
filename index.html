@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src\styles\styles.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/home.css">
+    <link rel="stylesheet" href="src/styles/funcionalidades.css">
+    <link rel="stylesheet" href="src/styles/duvidas.css">
+    <link rel="stylesheet" href="src/styles/footer.css">
+    <link rel="stylesheet" href="src/styles/planos.css">
+    <link rel="stylesheet" href="src/styles/popup.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Med Control</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-pills" id="nav_logo"> MedControl</i>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#functions">Funcionalidades</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#duvidas">Dúvidas?</a>
+                </li>
+            </ul>
+            <button id="mobile_menu_icon" class="mobile-menu">
+                <i class="fas fa-bars"></i>
+              </button>              
+           
+            <a href="#planos" class="btn-default">Experimente Agora!</a>
+        </nav>
+    </header>
+    
+    <main id="content">
+        <section id='home'>
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title"> 
+                    Tenha o <span>controle</span> de suas medicações na palma da mão!
+                </h1>
+                <p class="description">
+                    O MedControl é um app gratuito e fácil de usar para você gerenciar suas medicações, as de seus familiares e até as do seu pet!
+                </p>
+                <a href="#planos" class="btn-default">Experimente Agora!</a>
+            </div>  
+           
+            <div id="banner">
+                <img src="src/img/imagem-landing.png" alt="">
+            </div>
+        </section>
+
+        <section id="functions">
+            <h2 class="section-title">Funcionalidades</h2>
+            <h3 class="section-subtitle">Como o app funciona?</h3>
+
+            <div id="funcionalidades">
+                <div class="funcionalidade">
+                    <img src="src/img/imagem-cadastro.jpg" alt="" style="border-radius: 15px;">
+                    <h3>Cadastro</h3>
+                    <span class="description">
+                        Escolha um perfil já cadastrado ou cadastre um novo perfil
+                    </span>
+                </div>
+ 
+                <div class="funcionalidade">
+                    <img src="src/img/imagem-1.jpg" alt="" style="border-radius: 15px;">
+                    <h3>Perfil</h3>
+                    <span class="description">
+                        Tenha acesso aos medicamentos em uso e arquivados de cada perfil
+                    </span>
+                </div>
+            
+                <div class="funcionalidade">
+                    <img src="src/img/imagem-2.jpg" alt="" style="border-radius: 15px;">
+                    <h3>Cadastro de medicamentos</h3>
+                    <span class="description">
+                        Cadastre novos medicamentos e edite os já cadastrados
+                    </span>
+                </div>
+
+                <div class="funcionalidade">
+                    <img src="src/img/imagem-3.jpg" alt="" style="border-radius: 15px;">
+                    <h3>Seção "Hoje"</h3>
+                    <span class="description">
+                        Veja o que está programado para o dia
+                    </span>
+                </div>
+
+                <div class="funcionalidade">
+                    <img src="src/img/pet1.jpg" alt="" style="border-radius: 15px;">
+                    <h3>Faça o mesmo com seu pet!</h3>
+                    <span class="description">
+                        Todas as opções acima estão disponíveis para o cadastro/perfil do seu pet!
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section id="planos">
+            <h2 class="section-title">Escolha seu plano</h2>
+            <h3 class="section-subtitle">Comece a usar o MedControl agora mesmo</h3>
+          
+            <div class="planos-container">
+              <div class="plano-box">
+                <h3>Plano Free</h3>
+                <p>Cadastre 1 pessoa e 1 pet gratuitamente.</p>
+                <p><b>GRÁTIS!</b></p>
+                <div class="download">
+                    <p>Baixe Agora:</p>
+                    <div class="store-buttons">
+                      <a href="https://play.google.com/store" target="_blank" class="store-link">
+                        <i class="fab fa-google-play"></i> Google Play
+                      </a>
+                      <a href="https://www.apple.com/br/app-store/" target="_blank" class="store-link">
+                        <i class="fab fa-apple"></i> App Store
+                      </a>
+                    </div>
+                  </div>                  
+              </div>
+          
+              <div class="plano-box">
+                <h3>Plano Premium</h3>
+                <p>Cadastre pessoas e pets <strong>sem limites</strong>. Ideal para famílias e cuidadores.</p>
+                <p><b>R$ 9,99</b></p>
+                <div class="download">
+                    <p>Baixe Agora:</p>
+                    <div class="store-buttons">
+                      <a href="https://play.google.com/store" target="_blank" class="store-link">
+                        <i class="fab fa-google-play"></i> Google Play
+                      </a>
+                      <a href="https://www.apple.com/br/app-store/" target="_blank" class="store-link">
+                        <i class="fab fa-apple"></i> App Store
+                      </a>
+                    </div>
+                  </div>                  
+            </div>
+          </section>
+
+        <section id="duvidas">
+
+            <h2 class="section-title">Dúvidas?</h2>
+            <h3 class="section-subtitle">Entre em contato conosco</h3>
+          
+            <form action="#" method="post">
+              <label for="nome">Nome Completo:</label>
+              <input type="text" id="nome" name="nome" required>
+          
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+          
+              <label for="mensagem">Mensagem:</label>
+              <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+          
+              <button type="submit">Enviar</button>
+            </form>
+        </section>
+        
+    </main>
+    
+    <footer> 
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2025 MedControl
+            </span>
+
+            <div class="contato">
+                <p>Telefone: (00)1111-0000</p>
+                <p>Email: medcontrol@medcontrol.com.br</p>
+            </div>
+
+            <div class="social-media-buttons">
+                <a href="https://web.whatsapp.com/">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="https://www.instagram.com/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://pt-br.facebook.com/">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+            <div class="privacidade">
+                <a href="#" onclick="abrirPolitica(); return false;">
+                    Políticas de Privacidade
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="src/javascript/script.js"></script>
+    <div id="popup">
+        <h3>Políticas de Privacidade</h3>
+        <p>Seus dados são importantes para nós. Utilizamos apenas para melhorar sua experiência com o MedControl.</p>
+        <p>Não compartilhamos suas informações com terceiros.</p>
+        <button onclick="fecharPopup()">Fechar</button>
+      </div>
+</div>
+</body>
+</html>
