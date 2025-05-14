@@ -18,6 +18,7 @@ section {
     border:none;
     display: flex;
     text-decoration: none;
+    color: indigo;
     align-items: center;
     justify-content: center;
     background-color: rgb(148, 71, 192);
